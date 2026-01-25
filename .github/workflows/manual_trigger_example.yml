@@ -5,7 +5,7 @@ workflow_dispatch:
   inputs:
     education:
       type: choice
-      description: Select place of education:
+      description: Select place of education
       options: 
         - school
         - university
