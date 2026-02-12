@@ -21,12 +21,12 @@ jobs:
           exm="example, you can remove me"
           ans=$((${{ github.event.inputs.math_number }} + 10))
           echo "You need to pass this value: $ans"
-          echo "EXAMPLE=$exm" >> "$GITHUB_OUTPUT" #TODO edit here
+          echo "answer=$ans" >> "$GITHUB_OUTPUT" #TODO edit here
 
       - name: Show the answer
         run: |
           echo "The Answer to the maths result is:"
-          echo "___________" #TODO edit here
+          echo "${{ steps.math_answer.outputs.answer }}" #TODO edit here
 
 
 
