@@ -83,3 +83,5 @@ gcom
 create private repo and push
 tag and push v1
 gitignore! node_mods
+i
+test
