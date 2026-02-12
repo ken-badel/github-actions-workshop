@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Run Lint
-        run: npm standard
+        run: npx standard
 
       - name: Run Tests
         run: npm test
